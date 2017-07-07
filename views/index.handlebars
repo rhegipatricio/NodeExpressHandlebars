@@ -1,0 +1,16 @@
+<h1>{{NBA}}</h1>
+<p>This Is The {{NBA}}</p>
+<ul>
+	{{#each basketball_player}}
+			<li>
+				<p>
+					{{this.player}}. {{this.team}}
+				</p>
+			</li>
+	<</each>>
+</ul>
+
+<h3>Search for any type of stat for any player or team between 1937-2012</h2>
+<form method="get" action="/" class="button-size">
+	<textarea type="text" name="title" placeholder="year"></textarea>
+</form>
